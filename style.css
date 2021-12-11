@@ -102,6 +102,7 @@ form {
 
 form label {
   font-weight: bold;
+
 }
 
 form select,
@@ -134,7 +135,7 @@ footer p {
 
 /* -------  Media Query ------- */
     /* desktop view */
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 480px) {
       header {
         display: flex;
         justify-content: space-between;
