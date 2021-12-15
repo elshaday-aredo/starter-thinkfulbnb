@@ -150,15 +150,6 @@ footer p {
 /* -------  Media Query ------- */
     /* desktop view */
     @media all and (min-width: 480px) {
-      header {
-        display: flex;
-        padding: 0 30px;
-      }
-    
-      header h1 {
-        margin: 14px 0;
-        padding-top: 0;
-      }
       .group {
         flex-direction: row;
       }
@@ -186,8 +177,8 @@ footer p {
     
 
       /* ---- Desktop Header and Navigation ----*/
-    
       header {
+        padding: 0 30px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -204,7 +195,10 @@ footer p {
         display: flex;
         align-items: center;
       }
-    
+      
+      .logo {
+        font-size: 50px;
+      }
 
       /*---- desktop search form  ----*/
       form {
@@ -235,7 +229,12 @@ footer p {
 
     @media all and (max-width: 404px) {
       .logo {
-        font-size: 55px;
+        font-size: 50px;
+      }
+
+      form select,
+      form input {  
+        width: 60%;
       }
 
     }
